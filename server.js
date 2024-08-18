@@ -41,7 +41,7 @@ app.use("/api/order",orderRouter)
 
 
 app.get('/', (req, res) => {
-    res.send('Hello, this is the API for managing a simple library.');
+    res.send('Hello, this is the API for managing a simple Food delivery.');
 });
 
 app.listen(PORT,()=>{
