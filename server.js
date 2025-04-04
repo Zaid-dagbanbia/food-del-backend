@@ -16,7 +16,10 @@ const app = express();
 
 //middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "*", // or replace "*" with your frontend's deployed URL if needed
+    credentials: true,
+  }));
 
 
 const connectionString = process.env.DB_URI;
