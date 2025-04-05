@@ -17,7 +17,7 @@ const app = express();
 //middleware
 app.use(express.json());
 app.use(cors({
-    origin: "https://food-delivery-app-frontend-ecx8.onrender.com", 
+    origin: "https://food-del-frontend-tybx.onrender.com", 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'token'],
     credentials: true
